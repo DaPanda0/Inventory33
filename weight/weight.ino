@@ -148,13 +148,14 @@ void loop () {
   //combined ();
   
   // Serial.println(weight);
-  /*Serial.print ("weight in grams: ");
-    Serial.println(weight ); // print the weight over serial connection*/
-  
-  ble.print(weight);
+  Serial.print ("weight in grams: ");
+  Serial.println(weight ); // print the weight over serial connection
 
+  //ble.print(str);
+  ble.print(String(weight,2));
+  
   if (combined() == true) {
-    ble.print("Inventory is low");
+    ble.print(String(weight,2) + ". Inventory is low!");
   }
 
 
