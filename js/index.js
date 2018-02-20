@@ -95,7 +95,7 @@ function onConnError(){
     var str = bytesToString(data);
 	var weight = parseFloat(str);
 	document.getElementById("receiveDiv").innerHTML =  "Current weight: " + bytesToString(data) + "<br>";
-	if (weight < -1 || weight > 1) {
+	for (weight < -1 || weight > 1) {
 		document.getElementById("inventory").innerHTML =  "Inventory is low!<br>";
 	}
 }
