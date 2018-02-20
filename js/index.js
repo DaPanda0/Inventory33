@@ -92,11 +92,11 @@ function onConnError(){
 }
 
  function onData(data){ // data received from Arduino
-	document.getElementById("receiveDiv").innerHTML =  "Current weight: " + bytesToString(data) + "<br/>";
+	document.getElementById("receiveDiv").innerHTML =  "Current weight: " + bytesToString(data) + "<br>";
 }
 
  function onData(data){ // data received from Arduino
-	document.getElementById("inventory").innerHTML =  bytesToString(data) + "<br/>";
+	document.getElementById("inventory").innerHTML =  bytesToString(data) + "<br>";
 }
 
 function data(txt){
