@@ -13,12 +13,15 @@
     </head>
      <body onload="onLoad()">
 
-		<h1>Bluifruit test</h1>
+		<h1>Inventory</h1>
            
 		<ul id="bleDeviceList"> </ul>  
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 		<br>
 		<div id="statusDiv">Status: Disconnected</div>
+		<br>
+		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+		<br>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<div id="sendDiv"></div>
@@ -26,7 +29,6 @@
 		<div id="receiveDiv"></div>
 		<br><br>
 		<div id="inventory"></div>
-		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
     </body>
 </html>
 			

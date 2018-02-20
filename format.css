@@ -1,5 +1,5 @@
 body{
-	background-color: green;
+	background-color: #87CEFA; /* hexcode for lightskyblue */
 }	
 img{
 	width: 100%;	
@@ -27,7 +27,7 @@ img{
 
 /* width will be 100% of content */
 #refreshButton{
-	width: 100%;
+	width: 50%;
 }
 #sendButton{
 	width: 100%;
