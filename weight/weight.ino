@@ -130,7 +130,7 @@ void loop () {
     Serial.println(inputs);
 
     // Send input data to host via Bluefruit
-    ble.print(inputs);
+    //ble.print(inputs);
   }
   if (ble.available()) {
     Serial.print("* "); Serial.print(ble.available()); Serial.println(F(" bytes available from BTLE"));
@@ -154,9 +154,9 @@ void loop () {
   //ble.print(str);
   ble.print(String(weight,2));
   
-  if (combined() == true) {
-    ble.print(String(weight,2) + ". Inventory is low!");
-  }
+//  if (combined() == true) {
+//    ble.print(String(weight,2) + ". Inventory is low!");
+//  }
 
 
 }
